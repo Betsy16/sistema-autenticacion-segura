@@ -9,7 +9,7 @@ loginForm.addEventListener("submit", function(event) {
 
     const mensaje = document.getElementById("mensaje");
 
-    if (usuario === "administrador" && password === "Admin123") {
+ if (usuario === CONFIG.usuario && password === CONFIG.password) {
 
         mensaje.textContent = "Inicio de sesión exitoso.";
 
